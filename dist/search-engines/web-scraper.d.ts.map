@@ -1,0 +1,1 @@
+{"version":3,"file":"web-scraper.d.ts","sourceRoot":"","sources":["../../src/search-engines/web-scraper.ts"],"names":[],"mappings":"AAGA,OAAO,EAAgB,cAAc,EAAE,YAAY,EAAE,aAAa,EAAE,MAAM,aAAa,CAAC;AAExF,qBAAa,sBAAsB;IACjC,OAAO,CAAC,MAAM,CAAe;gBAEjB,MAAM,EAAE,YAAY;IAK1B,MAAM,CAAC,KAAK,EAAE,MAAM,EAAE,OAAO,GAAE,aAAkB,GAAG,OAAO,CAAC,cAAc,CAAC;YA8DnE,kBAAkB;IAwFhC,OAAO,CAAC,gBAAgB;CAWzB"}

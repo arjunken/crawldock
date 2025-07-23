@@ -1,0 +1,50 @@
+{
+  "name": "Web Search MCP Server",
+  "description": "Provides web search capabilities using Google Custom Search API, DuckDuckGo, and web scraping",
+  "version": "1.0.0",
+  "author": "Web Search MCP Server",
+  "license": "MIT",
+  "mcp": {
+    "server": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "capabilities": {
+      "tools": [
+        {
+          "name": "web_search",
+          "description": "Search the web and get comprehensive results"
+        },
+        {
+          "name": "get_rate_limit_info", 
+          "description": "Check current rate limit status"
+        },
+        {
+          "name": "update_search_config",
+          "description": "Update search engine configuration"
+        }
+      ]
+    }
+  },
+  "installation": {
+    "requirements": ["Node.js 18+", "npm"],
+    "steps": [
+      "npm install",
+      "npm run build",
+      "Copy .env.example to .env and configure your API keys (optional)",
+      "Add this configuration to LM Studio MCP settings"
+    ]
+  },
+  "configuration": {
+    "optional_env_vars": {
+      "GOOGLE_API_KEY": "Your Google Custom Search API key for enhanced results",
+      "GOOGLE_SEARCH_ENGINE_ID": "Your Google Custom Search Engine ID",
+      "MAX_RESULTS": "Maximum results per search (default: 10)",
+      "SEARCH_TIMEOUT": "Request timeout in milliseconds (default: 10000)",
+      "LOG_LEVEL": "Logging level: error, warn, info, debug (default: info)"
+    }
+  }
+}
