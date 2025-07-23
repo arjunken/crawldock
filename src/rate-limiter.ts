@@ -10,7 +10,7 @@ export class RateLimiter {
     this.maxRequests = maxRequests;
     this.windowMs = windowMs;
     
-    logger.info('Rate limiter initialized', {
+    logger.info('CrowlDock Rate Limiter initialized', {
       maxRequests,
       windowHours: windowMs / (60 * 60 * 1000)
     });

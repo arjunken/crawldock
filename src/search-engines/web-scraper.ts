@@ -8,7 +8,7 @@ export class WebScraperSearchEngine {
 
   constructor(config: SearchConfig) {
     this.config = config;
-    logger.info('Web Scraper Search Engine initialized');
+    logger.info('CrowlDock Web Scraper Search Engine initialized');
   }
 
   async search(query: string, options: SearchOptions = {}): Promise<SearchResponse> {

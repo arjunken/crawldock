@@ -7,3 +7,13 @@
 {"googleConfigured":false,"level":"info","maxResults":10,"message":"Search Manager initialized","service":"web-search-mcp","timeout":10000,"timestamp":"2025-07-23T18:45:24.771Z"}
 {"level":"info","message":"MCP Server initialized","serverName":"web-search-mcp-server","service":"web-search-mcp","timestamp":"2025-07-23T18:45:24.771Z","version":"1.0.0"}
 {"level":"info","message":"MCP Server started and connected via stdio transport","service":"web-search-mcp","timestamp":"2025-07-23T18:45:24.772Z"}
+{"level":"info","message":"Starting Web Search MCP Server","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.847Z"}
+{"hasGoogleApiKey":false,"hasGoogleSearchEngineId":false,"level":"info","maxResults":10,"message":"Configuration loaded","service":"web-search-mcp","timeout":10000,"timestamp":"2025-07-23T19:01:15.850Z"}
+{"level":"info","maxRequests":500,"message":"Rate limiter initialized","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.851Z","windowHours":24}
+{"hasApiKey":false,"hasSearchEngineId":false,"level":"info","message":"Google Search Engine initialized","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.851Z"}
+{"level":"info","message":"DuckDuckGo Search Engine initialized","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.851Z"}
+{"level":"info","message":"Web Scraper Search Engine initialized","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.852Z"}
+{"googleConfigured":false,"level":"info","maxResults":10,"message":"Search Manager initialized","service":"web-search-mcp","timeout":10000,"timestamp":"2025-07-23T19:01:15.852Z"}
+{"level":"info","message":"MCP Server initialized","serverName":"web-search-mcp-server","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.852Z","version":"1.0.0"}
+{"level":"info","message":"MCP Server started and connected via stdio transport","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.853Z"}
+{"level":"info","message":"Received SIGINT, shutting down gracefully","service":"web-search-mcp","timestamp":"2025-07-23T19:01:33.723Z"}

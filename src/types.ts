@@ -21,6 +21,25 @@ export interface SearchResponse {
   processingTime: number;
 }
 
+// New types for LLM-optimized responses
+export interface LLMOptimizedResult {
+  title: string;
+  url: string;
+  summary: string; // More concise than snippet
+  relevance: number; // 0-1 score for relevance
+  source: string;
+  domain: string;
+}
+
+export interface LLMOptimizedResponse {
+  query: string;
+  results: LLMOptimizedResult[];
+  summary: string; // Brief overview of all results
+  searchEngine: string;
+  processingTime: number;
+  confidence: number; // Overall confidence in results
+}
+
 export interface SearchConfig {
   googleApiKey?: string;
   googleSearchEngineId?: string;
@@ -41,4 +60,8 @@ export interface SearchOptions {
   region?: string;
   safeSearch?: boolean;
   timeRange?: 'day' | 'week' | 'month' | 'year';
+  // New options for LLM optimization
+  formatForLLM?: boolean;
+  includeSummary?: boolean;
+  relevanceThreshold?: number;
 }

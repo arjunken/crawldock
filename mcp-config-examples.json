@@ -1,0 +1,63 @@
+{
+  "lm-studio": {
+    "description": "Configuration for LM Studio",
+    "config": {
+      "mcpServers": {
+        "crowldock": {
+          "command": "node",
+          "args": ["/path/to/crowldock/dist/index.js"],
+          "env": {
+            "GOOGLE_API_KEY": "your_key_here",
+            "GOOGLE_SEARCH_ENGINE_ID": "your_engine_id_here"
+          }
+        }
+      }
+    }
+  },
+  "claude-desktop": {
+    "description": "Configuration for Claude Desktop",
+    "config": {
+      "mcpServers": {
+        "crowldock": {
+          "command": "node",
+          "args": ["/path/to/crowldock/dist/index.js"]
+        }
+      }
+    }
+  },
+  "ollama": {
+    "description": "Configuration for Ollama with MCP plugin",
+    "config": {
+      "servers": {
+        "crowldock": {
+          "command": "node",
+          "args": ["/path/to/crowldock/dist/index.js"]
+        }
+      }
+    }
+  },
+  "generic-mcp": {
+    "description": "Generic configuration for any MCP-compliant client",
+    "config": {
+      "name": "crowldock",
+      "command": "node",
+      "args": ["/path/to/crowldock/dist/index.js"],
+      "transport": "stdio"
+    }
+  },
+  "environment-variables": {
+    "description": "Environment variables for configuration",
+    "variables": {
+      "GOOGLE_API_KEY": "your_google_api_key_here",
+      "GOOGLE_SEARCH_ENGINE_ID": "your_search_engine_id_here",
+      "MAX_RESULTS": "10",
+      "SEARCH_TIMEOUT": "10000",
+      "USER_AGENT": "Mozilla/5.0 (compatible; CrowlDock/1.0)",
+      "LOG_LEVEL": "info",
+      "MAX_RETRIES": "3",
+      "RETRY_DELAY": "1000",
+      "MAX_REQUESTS_PER_DAY": "500",
+      "RATE_LIMIT_WINDOW_HOURS": "24"
+    }
+  }
+} 
