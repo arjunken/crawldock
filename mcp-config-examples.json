@@ -36,6 +36,16 @@
       }
     }
   },
+  "cursor-ai": {
+    "description": "Configuration for Cursor.ai",
+    "config": {
+      "name": "web-search",
+      "command": "node",
+      "args": ["/path/to/crawldock/dist/index.js"],
+      "cwd": "/path/to/crawldock",
+      "transport": "stdio"
+    }
+  },
   "generic-mcp": {
     "description": "Generic configuration for any MCP-compliant client",
     "config": {
