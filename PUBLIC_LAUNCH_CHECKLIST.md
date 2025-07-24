@@ -10,7 +10,6 @@ This checklist ensures CrowlDock is ready for public release and community contr
 - [x] **CODE_OF_CONDUCT.md** - Community behavior standards
 - [x] **SECURITY.md** - Security policy and vulnerability reporting
 - [x] **CHANGELOG.md** - Version history and changes
-- [x] **TIPS.md** - Troubleshooting and debugging guide
 - [ ] **LICENSE** - MIT License file (if not already present)
 
 ### ✅ **GitHub Templates**
