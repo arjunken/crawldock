@@ -6,13 +6,13 @@ import logger from './logger.js';
 dotenv.config();
 async function main() {
     try {
-        logger.info('Starting CrowlDock MCP Server');
+        logger.info('Starting CrawlDock MCP Server');
         const config = {
             googleApiKey: process.env.GOOGLE_API_KEY,
             googleSearchEngineId: process.env.GOOGLE_SEARCH_ENGINE_ID,
             maxResults: parseInt(process.env.MAX_RESULTS || '10'),
             timeout: parseInt(process.env.SEARCH_TIMEOUT || '10000'),
-            userAgent: process.env.USER_AGENT || 'Mozilla/5.0 (compatible; CrowlDock/1.0)'
+            userAgent: process.env.USER_AGENT || 'Mozilla/5.0 (compatible; CrawlDock/1.0)'
         };
         logger.info('Configuration loaded', {
             hasGoogleApiKey: !!config.googleApiKey,

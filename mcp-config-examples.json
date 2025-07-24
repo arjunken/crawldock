@@ -5,7 +5,7 @@
       "mcpServers": {
         "web-search": {
           "command": "node",
-          "args": ["C:\\path\\to\\crowldock\\dist\\index.js"],
+          "args": ["C:\\path\\to\\crawldock\\dist\\index.js"],
           "env": {
             "GOOGLE_API_KEY": "your_key_here",
             "GOOGLE_SEARCH_ENGINE_ID": "your_engine_id_here"
@@ -20,7 +20,7 @@
       "mcpServers": {
         "web-search": {
           "command": "node",
-          "args": ["/path/to/crowldock/dist/index.js"]
+          "args": ["/path/to/crawldock/dist/index.js"]
         }
       }
     }
@@ -31,7 +31,7 @@
       "servers": {
         "web-search": {
           "command": "node",
-          "args": ["/path/to/crowldock/dist/index.js"]
+          "args": ["/path/to/crawldock/dist/index.js"]
         }
       }
     }
@@ -41,7 +41,7 @@
     "config": {
       "name": "web-search",
       "command": "node",
-      "args": ["/path/to/crowldock/dist/index.js"],
+      "args": ["/path/to/crawldock/dist/index.js"],
       "transport": "stdio"
     }
   },
@@ -52,7 +52,7 @@
       "GOOGLE_SEARCH_ENGINE_ID": "your_search_engine_id_here",
       "MAX_RESULTS": "10",
       "SEARCH_TIMEOUT": "10000",
-      "USER_AGENT": "Mozilla/5.0 (compatible; CrowlDock/1.0)",
+      "USER_AGENT": "Mozilla/5.0 (compatible; CrawlDock/1.0)",
       "LOG_LEVEL": "info",
       "MAX_RETRIES": "3",
       "RETRY_DELAY": "1000",

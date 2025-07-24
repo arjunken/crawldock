@@ -1,6 +1,6 @@
 ---
 name: ✨ Feature Request
-about: Suggest an idea for CrowlDock
+about: Suggest an idea for CrawlDock
 title: '[FEATURE] '
 labels: ['enhancement', 'needs-triage']
 assignees: ''

@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to CrowlDock will be documented in this file.
+All notable changes to CrawlDock will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -19,8 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive documentation and troubleshooting guides
 
 ### Changed
-- Rebranded from "Web Search MCP Server" to "CrowlDock"
-- Updated server name from "crowldock" to "web-search" for better UX
+- Rebranded from "Web Search MCP Server" to "CrawlDock"
+- Updated server name from "crawldock" to "web-search" for better UX
 - Enhanced MCP server configuration with `cwd` field requirement
 - Improved error messages with engine-specific results
 - Updated all documentation to reflect universal MCP compatibility
@@ -35,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-07-24
 
 ### Added
-- Initial release of CrowlDock MCP Server
+- Initial release of CrawlDock MCP Server
 - Google Custom Search API integration
 - DuckDuckGo API fallback
 - Web scraping fallback (Startpage, Searx)
@@ -118,4 +118,4 @@ When adding entries to the changelog, please follow these guidelines:
 
 ---
 
-**For more information about CrowlDock, see the [README.md](README.md).** 
+**For more information about CrawlDock, see the [README.md](README.md).** 

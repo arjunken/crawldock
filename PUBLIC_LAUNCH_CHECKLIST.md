@@ -1,6 +1,6 @@
 # 🚀 Public Launch Checklist
 
-This checklist ensures CrowlDock is ready for public release and community contribution.
+This checklist ensures CrawlDock is ready for public release and community contribution.
 
 ## 📋 **Pre-Launch Checklist**
 
@@ -52,7 +52,7 @@ This checklist ensures CrowlDock is ready for public release and community contr
 
 ### **GitHub Features**
 - [ ] **Topics/Tags** - Add relevant topics to repository
-  - `mcp`, `search`, `web-search`, `llm`, `model-context-protocol`, `crowldock`
+  - `mcp`, `search`, `web-search`, `llm`, `model-context-protocol`, `crawldock`
 - [ ] **Description** - Update repository description
 - [ ] **Website** - Add project website if available
 - [ ] **Social Preview** - Add social preview image
@@ -183,6 +183,6 @@ This checklist ensures CrowlDock is ready for public release and community contr
 
 ---
 
-**Remember: The goal is to build a sustainable, welcoming community around CrowlDock!** 🚀
+**Remember: The goal is to build a sustainable, welcoming community around CrawlDock!** 🚀
 
 **Good luck with your public launch!** 🎉 

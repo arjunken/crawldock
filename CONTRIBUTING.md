@@ -1,6 +1,6 @@
-# Contributing to CrowlDock
+# Contributing to CrawlDock
 
-Thank you for your interest in contributing to CrowlDock! This document provides guidelines for contributing to this project.
+Thank you for your interest in contributing to CrawlDock! This document provides guidelines for contributing to this project.
 
 ## 🎯 **How to Contribute**
 
@@ -32,8 +32,8 @@ Thank you for your interest in contributing to CrowlDock! This document provides
 ### **Local Development**
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/crowldock.git
-cd crowldock
+git clone https://github.com/yourusername/crawldock.git
+cd crawldock
 
 # Install dependencies
 npm install
@@ -252,8 +252,8 @@ git push origin feature/your-feature-name
 
 ## 📄 **License**
 
-By contributing to CrowlDock, you agree that your contributions will be licensed under the MIT License.
+By contributing to CrawlDock, you agree that your contributions will be licensed under the MIT License.
 
 ---
 
-Thank you for contributing to CrowlDock! 🚀 
+Thank you for contributing to CrawlDock! 🚀 

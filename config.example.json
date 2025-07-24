@@ -3,7 +3,7 @@
   "googleSearchEngineId": "your_search_engine_id_here",
   "maxResults": 10,
   "timeout": 10000,
-  "userAgent": "Mozilla/5.0 (compatible; CrowlDock/1.0)",
+  "userAgent": "Mozilla/5.0 (compatible; CrawlDock/1.0)",
   "logLevel": "info",
   "maxRetries": 3,
   "retryDelay": 1000,

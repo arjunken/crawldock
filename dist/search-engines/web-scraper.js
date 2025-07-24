@@ -5,7 +5,7 @@ export class WebScraperSearchEngine {
     config;
     constructor(config) {
         this.config = config;
-        logger.info('CrowlDock Web Scraper Search Engine initialized');
+        logger.info('CrawlDock Web Scraper Search Engine initialized');
     }
     async search(query, options = {}) {
         const startTime = Date.now();

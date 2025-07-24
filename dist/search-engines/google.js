@@ -6,7 +6,7 @@ export class GoogleSearchEngine {
     retryDelay = 1000; // 1 second
     constructor(config) {
         this.config = config;
-        logger.info('CrowlDock Google Search Engine initialized', {
+        logger.info('CrawlDock Google Search Engine initialized', {
             hasApiKey: !!config.googleApiKey,
             hasSearchEngineId: !!config.googleSearchEngineId
         });

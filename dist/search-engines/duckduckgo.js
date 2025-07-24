@@ -4,7 +4,7 @@ export class DuckDuckGoSearchEngine {
     config;
     constructor(config) {
         this.config = config;
-        logger.info('CrowlDock DuckDuckGo Search Engine initialized');
+        logger.info('CrawlDock DuckDuckGo Search Engine initialized');
     }
     async search(query, options = {}) {
         const startTime = Date.now();

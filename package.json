@@ -1,5 +1,5 @@
 {
-  "name": "crowldock",
+  "name": "crawldock",
   "version": "1.0.0",
   "description": "Web Search MCP Server for any MCP-compliant applications with Google, DuckDuckGo, and web scraping support",
   "main": "dist/index.js",
@@ -10,8 +10,8 @@
     "dev": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["mcp", "search", "web-search", "llm", "crowldock", "model-context-protocol"],
-  "author": "CrowlDock",
+  "keywords": ["mcp", "search", "web-search", "llm", "crawldock", "model-context-protocol"],
+  "author": "CrawlDock",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.16.0",

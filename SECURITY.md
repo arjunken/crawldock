@@ -11,7 +11,7 @@ We release patches for security vulnerabilities. Which versions are eligible for
 
 ## 🚨 **Reporting a Vulnerability**
 
-We take the security of CrowlDock seriously. If you believe you have found a security vulnerability, please report it to us as described below.
+We take the security of CrawlDock seriously. If you believe you have found a security vulnerability, please report it to us as described below.
 
 ### **Please DO NOT report security vulnerabilities through public GitHub issues.**
 
@@ -144,4 +144,4 @@ We would like to thank the following security researchers for responsibly disclo
 
 ---
 
-**Thank you for helping keep CrowlDock secure!** 🛡️ 
+**Thank you for helping keep CrawlDock secure!** 🛡️ 

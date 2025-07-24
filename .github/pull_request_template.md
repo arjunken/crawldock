@@ -104,4 +104,4 @@ Closes #(issue number)
 
 ---
 
-**Thank you for contributing to CrowlDock!** 🚀 
+**Thank you for contributing to CrawlDock!** 🚀 

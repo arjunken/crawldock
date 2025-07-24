@@ -9,7 +9,7 @@ export class GoogleSearchEngine {
 
   constructor(config: SearchConfig) {
     this.config = config;
-    logger.info('CrowlDock Google Search Engine initialized', {
+    logger.info('CrawlDock Google Search Engine initialized', {
       hasApiKey: !!config.googleApiKey,
       hasSearchEngineId: !!config.googleSearchEngineId
     });

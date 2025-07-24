@@ -7,7 +7,7 @@ export class DuckDuckGoSearchEngine {
 
   constructor(config: SearchConfig) {
     this.config = config;
-    logger.info('CrowlDock DuckDuckGo Search Engine initialized');
+    logger.info('CrawlDock DuckDuckGo Search Engine initialized');
   }
 
   async search(query: string, options: SearchOptions = {}): Promise<SearchResponse> {

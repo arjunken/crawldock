@@ -1,4 +1,4 @@
-# CrowlDock - Web Search MCP Server
+# CrawlDock - Web Search MCP Server
 
 A comprehensive Model Context Protocol (MCP) server that provides web search capabilities for any MCP-compliant applications. Features Google Custom Search API integration with DuckDuckGo and web scraping fallbacks, optimized for LLM consumption.
 
@@ -28,7 +28,7 @@ A comprehensive Model Context Protocol (MCP) server that provides web search cap
 1. **Clone and install dependencies:**
 ```bash
 git clone <repository-url>
-cd crowldock
+cd crawldock
 npm install
 ```
 
@@ -62,7 +62,7 @@ GOOGLE_SEARCH_ENGINE_ID=your_search_engine_id_here
 # Search Settings
 MAX_RESULTS=10
 SEARCH_TIMEOUT=10000
-USER_AGENT=Mozilla/5.0 (compatible; CrowlDock/1.0)
+USER_AGENT=Mozilla/5.0 (compatible; CrawlDock/1.0)
 
 # Logging
 LOG_LEVEL=info
@@ -92,7 +92,7 @@ RATE_LIMIT_WINDOW_HOURS=24
 
 ### LM Studio Configuration
 
-**Step 1: Build CrowlDock**
+**Step 1: Build CrawlDock**
 ```bash
 npm install
 npm run build
@@ -107,7 +107,7 @@ Add this to your LM Studio MCP configuration (`%APPDATA%\LM Studio\mcp.json`):
     "web-search": {
       "command": "node",
       "args": ["dist/index.js"],
-      "cwd": "C:\\path\\to\\crowldock"
+      "cwd": "C:\\path\\to\\crawldock"
     }
   }
 }
@@ -123,7 +123,7 @@ Add this to your LM Studio MCP configuration (`%APPDATA%\LM Studio\mcp.json`):
 
 ### Claude Desktop Configuration
 
-**Step 1: Build CrowlDock**
+**Step 1: Build CrawlDock**
 ```bash
 npm install
 npm run build
@@ -138,7 +138,7 @@ Add to your Claude Desktop MCP configuration:
     "web-search": {
       "command": "node",
       "args": ["dist/index.js"],
-      "cwd": "/path/to/crowldock"
+      "cwd": "/path/to/crawldock"
     }
   }
 }
@@ -153,7 +153,7 @@ Add to your Claude Desktop MCP configuration:
 
 ### Ollama Configuration
 
-**Step 1: Build CrowlDock**
+**Step 1: Build CrawlDock**
 ```bash
 npm install
 npm run build
@@ -168,7 +168,7 @@ Configure in your Ollama MCP plugin settings:
     "web-search": {
       "command": "node",
       "args": ["dist/index.js"],
-      "cwd": "/path/to/crowldock"
+      "cwd": "/path/to/crawldock"
     }
   }
 }
@@ -190,7 +190,7 @@ For any MCP-compliant client, use the stdio transport:
   "name": "web-search",
   "command": "node",
   "args": ["dist/index.js"],
-  "cwd": "/path/to/crowldock",
+  "cwd": "/path/to/crawldock",
   "transport": "stdio"
 }
 ```
@@ -201,7 +201,7 @@ For any MCP-compliant client, use the stdio transport:
 
 ### How to Use in Conversations
 
-Once configured, you can use CrowlDock in your conversations:
+Once configured, you can use CrawlDock in your conversations:
 
 #### **Basic Web Search**
 ```
@@ -435,7 +435,7 @@ src/
        "web-search": {
          "command": "node",
          "args": ["dist/index.js"],
-         "cwd": "C:\\path\\to\\crowldock"
+         "cwd": "C:\\path\\to\\crawldock"
        }
      }
    }

@@ -17,127 +17,127 @@
 {"level":"info","message":"MCP Server initialized","serverName":"web-search-mcp-server","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.852Z","version":"1.0.0"}
 {"level":"info","message":"MCP Server started and connected via stdio transport","service":"web-search-mcp","timestamp":"2025-07-23T19:01:15.853Z"}
 {"level":"info","message":"Received SIGINT, shutting down gracefully","service":"web-search-mcp","timestamp":"2025-07-23T19:01:33.723Z"}
-{"correlationId":"3e281287","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T00:00:19.984Z"}
-{"correlationId":"3e281287","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:00:19.988Z"}
-{"correlationId":"3e281287","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T00:00:19.989Z","windowHours":24}
-{"correlationId":"3e281287","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:00:19.989Z"}
-{"correlationId":"3e281287","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:00:19.990Z"}
-{"correlationId":"3e281287","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:00:19.990Z"}
-{"correlationId":"3e281287","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:00:19.991Z"}
-{"correlationId":"3e281287","level":"info","message":"CrowlDock MCP Server initialized","serverName":"crowldock","service":"crowldock","timestamp":"2025-07-24T00:00:19.992Z","version":"1.0.0"}
-{"correlationId":"3e281287","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T00:00:19.993Z"}
-{"correlationId":"8ccb5c3c","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T00:01:24.703Z"}
-{"correlationId":"8ccb5c3c","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:01:24.706Z"}
-{"correlationId":"8ccb5c3c","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T00:01:24.706Z","windowHours":24}
-{"correlationId":"8ccb5c3c","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:01:24.707Z"}
-{"correlationId":"8ccb5c3c","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:01:24.707Z"}
-{"correlationId":"8ccb5c3c","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:01:24.707Z"}
-{"correlationId":"8ccb5c3c","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:01:24.708Z"}
-{"correlationId":"8ccb5c3c","level":"info","message":"CrowlDock MCP Server initialized","serverName":"crowldock","service":"crowldock","timestamp":"2025-07-24T00:01:24.709Z","version":"1.0.0"}
-{"correlationId":"8ccb5c3c","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T00:01:24.710Z"}
-{"correlationId":"8ccb5c3c","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crowldock","timestamp":"2025-07-24T00:01:37.155Z"}
-{"correlationId":"c317bf00","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T00:25:43.238Z"}
-{"correlationId":"c317bf00","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:25:43.240Z"}
-{"correlationId":"c317bf00","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T00:25:43.241Z","windowHours":24}
-{"correlationId":"c317bf00","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:25:43.241Z"}
-{"correlationId":"c317bf00","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:25:43.242Z"}
-{"correlationId":"c317bf00","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:25:43.242Z"}
-{"correlationId":"c317bf00","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:25:43.242Z"}
-{"correlationId":"c317bf00","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T00:25:43.243Z","version":"1.0.0"}
-{"correlationId":"c317bf00","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T00:25:43.244Z"}
-{"correlationId":"c317bf00","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crowldock","timestamp":"2025-07-24T00:26:13.956Z"}
-{"correlationId":"3faf2aac","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T00:34:52.929Z"}
-{"correlationId":"3faf2aac","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:34:52.932Z"}
-{"correlationId":"3faf2aac","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T00:34:52.933Z","windowHours":24}
-{"correlationId":"3faf2aac","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:34:52.933Z"}
-{"correlationId":"3faf2aac","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:34:52.934Z"}
-{"correlationId":"3faf2aac","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:34:52.934Z"}
-{"correlationId":"3faf2aac","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:34:52.934Z"}
-{"correlationId":"3faf2aac","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T00:34:52.934Z","version":"1.0.0"}
-{"correlationId":"3faf2aac","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T00:34:52.935Z"}
-{"correlationId":"3faf2aac","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crowldock","timestamp":"2025-07-24T00:36:41.569Z"}
-{"correlationId":"96cd54fd","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T00:59:21.482Z"}
-{"correlationId":"96cd54fd","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:59:21.485Z"}
-{"correlationId":"96cd54fd","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T00:59:21.486Z","windowHours":24}
-{"correlationId":"96cd54fd","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:59:21.486Z"}
-{"correlationId":"96cd54fd","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:59:21.487Z"}
-{"correlationId":"96cd54fd","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T00:59:21.487Z"}
-{"correlationId":"96cd54fd","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T00:59:21.487Z"}
-{"correlationId":"96cd54fd","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T00:59:21.487Z","version":"1.0.0"}
-{"correlationId":"96cd54fd","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T00:59:21.488Z"}
-{"correlationId":"2cff84b1","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T01:31:59.672Z"}
-{"correlationId":"2cff84b1","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:31:59.674Z"}
-{"correlationId":"2cff84b1","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T01:31:59.675Z","windowHours":24}
-{"correlationId":"2cff84b1","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:31:59.676Z"}
-{"correlationId":"2cff84b1","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:31:59.676Z"}
-{"correlationId":"2cff84b1","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:31:59.676Z"}
-{"correlationId":"2cff84b1","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:31:59.676Z"}
-{"correlationId":"2cff84b1","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T01:31:59.677Z","version":"1.0.0"}
-{"correlationId":"2cff84b1","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T01:31:59.677Z"}
-{"correlationId":"946c7044","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T01:36:44.974Z"}
-{"correlationId":"946c7044","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:36:44.977Z"}
-{"correlationId":"946c7044","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T01:36:44.978Z","windowHours":24}
-{"correlationId":"946c7044","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:36:44.978Z"}
-{"correlationId":"946c7044","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:36:44.979Z"}
-{"correlationId":"946c7044","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:36:44.979Z"}
-{"correlationId":"946c7044","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:36:44.979Z"}
-{"correlationId":"946c7044","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T01:36:44.980Z","version":"1.0.0"}
-{"correlationId":"946c7044","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T01:36:44.981Z"}
-{"correlationId":"946c7044","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crowldock","timestamp":"2025-07-24T01:36:52.478Z"}
-{"correlationId":"7a108171","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T01:43:23.945Z"}
-{"correlationId":"7a108171","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:43:23.948Z"}
-{"correlationId":"7a108171","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T01:43:23.949Z","windowHours":24}
-{"correlationId":"7a108171","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:43:23.950Z"}
-{"correlationId":"7a108171","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:43:23.950Z"}
-{"correlationId":"7a108171","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:43:23.950Z"}
-{"correlationId":"7a108171","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:43:23.950Z"}
-{"correlationId":"7a108171","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T01:43:23.951Z","version":"1.0.0"}
-{"correlationId":"7a108171","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T01:43:23.952Z"}
-{"correlationId":"d8ca015f","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T01:43:32.828Z"}
-{"correlationId":"d8ca015f","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:43:32.831Z"}
-{"correlationId":"d8ca015f","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T01:43:32.832Z","windowHours":24}
-{"correlationId":"d8ca015f","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:43:32.832Z"}
-{"correlationId":"d8ca015f","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:43:32.832Z"}
-{"correlationId":"d8ca015f","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T01:43:32.832Z"}
-{"correlationId":"d8ca015f","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T01:43:32.832Z"}
-{"correlationId":"d8ca015f","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T01:43:32.833Z","version":"1.0.0"}
-{"correlationId":"d8ca015f","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T01:43:32.834Z"}
-{"correlationId":"d5e57dd6","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T04:00:18.301Z"}
-{"correlationId":"d5e57dd6","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T04:00:18.304Z"}
-{"correlationId":"d5e57dd6","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T04:00:18.304Z","windowHours":24}
-{"correlationId":"d5e57dd6","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:00:18.305Z"}
-{"correlationId":"d5e57dd6","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:00:18.305Z"}
-{"correlationId":"d5e57dd6","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:00:18.305Z"}
-{"correlationId":"d5e57dd6","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T04:00:18.305Z"}
-{"correlationId":"d5e57dd6","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T04:00:18.305Z","version":"1.0.0"}
-{"correlationId":"d5e57dd6","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T04:00:18.306Z"}
-{"correlationId":"67888b5b","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T04:12:25.308Z"}
-{"correlationId":"67888b5b","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T04:12:25.311Z"}
-{"correlationId":"67888b5b","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T04:12:25.312Z","windowHours":24}
-{"correlationId":"67888b5b","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:12:25.312Z"}
-{"correlationId":"67888b5b","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:12:25.313Z"}
-{"correlationId":"67888b5b","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:12:25.313Z"}
-{"correlationId":"67888b5b","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T04:12:25.313Z"}
-{"correlationId":"67888b5b","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T04:12:25.314Z","version":"1.0.0"}
-{"correlationId":"67888b5b","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T04:12:25.315Z"}
-{"correlationId":"886c2be5","level":"info","message":"Starting CrowlDock MCP Server","service":"crowldock","timestamp":"2025-07-24T04:12:42.299Z"}
-{"correlationId":"886c2be5","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T04:12:42.303Z"}
-{"correlationId":"886c2be5","level":"info","maxRequests":500,"message":"CrowlDock Rate Limiter initialized","service":"crowldock","timestamp":"2025-07-24T04:12:42.304Z","windowHours":24}
-{"correlationId":"886c2be5","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrowlDock Google Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:12:42.304Z"}
-{"correlationId":"886c2be5","level":"info","message":"CrowlDock DuckDuckGo Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:12:42.304Z"}
-{"correlationId":"886c2be5","level":"info","message":"CrowlDock Web Scraper Search Engine initialized","service":"crowldock","timestamp":"2025-07-24T04:12:42.305Z"}
-{"correlationId":"886c2be5","googleConfigured":true,"level":"info","maxResults":10,"message":"CrowlDock Search Manager initialized","service":"crowldock","timeout":10000,"timestamp":"2025-07-24T04:12:42.305Z"}
-{"correlationId":"886c2be5","level":"info","message":"CrowlDock MCP Server initialized","serverName":"web-search","service":"crowldock","timestamp":"2025-07-24T04:12:42.305Z","version":"1.0.0"}
-{"correlationId":"886c2be5","level":"info","message":"CrowlDock MCP Server started and connected via stdio transport","service":"crowldock","timestamp":"2025-07-24T04:12:42.306Z"}
-{"arguments":{"options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner"},"correlationId":"886c2be5","level":"info","message":"Tool called","method":"tools/call","service":"crowldock","timestamp":"2025-07-24T04:12:43.671Z","toolName":"web_search"}
-{"args":{"options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner"},"correlationId":"886c2be5","level":"info","message":"Processing web_search tool call","service":"crowldock","timestamp":"2025-07-24T04:12:43.672Z"}
-{"correlationId":"886c2be5","level":"info","message":"LLM Search Request","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","requestType":"llm_search","service":"crowldock","timestamp":"2025-07-24T04:12:43.673Z"}
-{"correlationId":"886c2be5","level":"info","message":"Executing web search","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","service":"crowldock","timestamp":"2025-07-24T04:12:43.673Z"}
-{"availableEngines":["Google","DuckDuckGo","WebScraper"],"correlationId":"886c2be5","level":"info","message":"Starting search with fallback strategy","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","service":"crowldock","timestamp":"2025-07-24T04:12:43.674Z"}
-{"correlationId":"886c2be5","level":"info","message":"Attempting search with Google","query":"Super Bowl 2025 winner","service":"crowldock","timestamp":"2025-07-24T04:12:43.674Z"}
-{"correlationId":"886c2be5","level":"info","message":"Starting Google search (attempt 1/3)","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","service":"crowldock","timestamp":"2025-07-24T04:12:43.674Z"}
-{"attempt":1,"correlationId":"886c2be5","level":"info","message":"Google search completed","processingTime":525,"query":"Super Bowl 2025 winner","resultsCount":5,"service":"crowldock","timestamp":"2025-07-24T04:12:44.199Z","totalResults":"170000000"}
-{"correlationId":"886c2be5","engine":"Google","eventType":"engine_performance","level":"info","message":"Search Engine Performance","processingTime":525,"query":"Super Bowl 2025 winner","service":"crowldock","success":true,"timestamp":"2025-07-24T04:12:44.199Z"}
-{"correlationId":"886c2be5","engine":"Google","level":"info","message":"Search successful with Google","processingTime":525,"query":"Super Bowl 2025 winner","resultsCount":5,"service":"crowldock","timestamp":"2025-07-24T04:12:44.199Z"}
-{"correlationId":"886c2be5","engine":"google","level":"info","message":"LLM Search Response","processingTime":525,"query":"Super Bowl 2025 winner","responseType":"llm_search_result","resultsCount":5,"service":"crowldock","timestamp":"2025-07-24T04:12:44.199Z"}
-{"correlationId":"886c2be5","level":"info","message":"Web search completed successfully","processingTime":525,"query":"Super Bowl 2025 winner","resultsCount":5,"service":"crowldock","timestamp":"2025-07-24T04:12:44.200Z"}
+{"correlationId":"3e281287","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T00:00:19.984Z"}
+{"correlationId":"3e281287","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:00:19.988Z"}
+{"correlationId":"3e281287","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T00:00:19.989Z","windowHours":24}
+{"correlationId":"3e281287","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:00:19.989Z"}
+{"correlationId":"3e281287","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:00:19.990Z"}
+{"correlationId":"3e281287","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:00:19.990Z"}
+{"correlationId":"3e281287","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:00:19.991Z"}
+{"correlationId":"3e281287","level":"info","message":"CrawlDock MCP Server initialized","serverName":"crawldock","service":"crawldock","timestamp":"2025-07-24T00:00:19.992Z","version":"1.0.0"}
+{"correlationId":"3e281287","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T00:00:19.993Z"}
+{"correlationId":"8ccb5c3c","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T00:01:24.703Z"}
+{"correlationId":"8ccb5c3c","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:01:24.706Z"}
+{"correlationId":"8ccb5c3c","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T00:01:24.706Z","windowHours":24}
+{"correlationId":"8ccb5c3c","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:01:24.707Z"}
+{"correlationId":"8ccb5c3c","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:01:24.707Z"}
+{"correlationId":"8ccb5c3c","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:01:24.707Z"}
+{"correlationId":"8ccb5c3c","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:01:24.708Z"}
+{"correlationId":"8ccb5c3c","level":"info","message":"CrawlDock MCP Server initialized","serverName":"crawldock","service":"crawldock","timestamp":"2025-07-24T00:01:24.709Z","version":"1.0.0"}
+{"correlationId":"8ccb5c3c","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T00:01:24.710Z"}
+{"correlationId":"8ccb5c3c","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crawldock","timestamp":"2025-07-24T00:01:37.155Z"}
+{"correlationId":"c317bf00","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T00:25:43.238Z"}
+{"correlationId":"c317bf00","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:25:43.240Z"}
+{"correlationId":"c317bf00","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T00:25:43.241Z","windowHours":24}
+{"correlationId":"c317bf00","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:25:43.241Z"}
+{"correlationId":"c317bf00","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:25:43.242Z"}
+{"correlationId":"c317bf00","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:25:43.242Z"}
+{"correlationId":"c317bf00","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:25:43.242Z"}
+{"correlationId":"c317bf00","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T00:25:43.243Z","version":"1.0.0"}
+{"correlationId":"c317bf00","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T00:25:43.244Z"}
+{"correlationId":"c317bf00","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crawldock","timestamp":"2025-07-24T00:26:13.956Z"}
+{"correlationId":"3faf2aac","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T00:34:52.929Z"}
+{"correlationId":"3faf2aac","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:34:52.932Z"}
+{"correlationId":"3faf2aac","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T00:34:52.933Z","windowHours":24}
+{"correlationId":"3faf2aac","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:34:52.933Z"}
+{"correlationId":"3faf2aac","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:34:52.934Z"}
+{"correlationId":"3faf2aac","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:34:52.934Z"}
+{"correlationId":"3faf2aac","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:34:52.934Z"}
+{"correlationId":"3faf2aac","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T00:34:52.934Z","version":"1.0.0"}
+{"correlationId":"3faf2aac","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T00:34:52.935Z"}
+{"correlationId":"3faf2aac","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crawldock","timestamp":"2025-07-24T00:36:41.569Z"}
+{"correlationId":"96cd54fd","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T00:59:21.482Z"}
+{"correlationId":"96cd54fd","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:59:21.485Z"}
+{"correlationId":"96cd54fd","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T00:59:21.486Z","windowHours":24}
+{"correlationId":"96cd54fd","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:59:21.486Z"}
+{"correlationId":"96cd54fd","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:59:21.487Z"}
+{"correlationId":"96cd54fd","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T00:59:21.487Z"}
+{"correlationId":"96cd54fd","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T00:59:21.487Z"}
+{"correlationId":"96cd54fd","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T00:59:21.487Z","version":"1.0.0"}
+{"correlationId":"96cd54fd","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T00:59:21.488Z"}
+{"correlationId":"2cff84b1","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T01:31:59.672Z"}
+{"correlationId":"2cff84b1","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:31:59.674Z"}
+{"correlationId":"2cff84b1","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T01:31:59.675Z","windowHours":24}
+{"correlationId":"2cff84b1","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:31:59.676Z"}
+{"correlationId":"2cff84b1","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:31:59.676Z"}
+{"correlationId":"2cff84b1","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:31:59.676Z"}
+{"correlationId":"2cff84b1","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:31:59.676Z"}
+{"correlationId":"2cff84b1","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T01:31:59.677Z","version":"1.0.0"}
+{"correlationId":"2cff84b1","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T01:31:59.677Z"}
+{"correlationId":"946c7044","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T01:36:44.974Z"}
+{"correlationId":"946c7044","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:36:44.977Z"}
+{"correlationId":"946c7044","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T01:36:44.978Z","windowHours":24}
+{"correlationId":"946c7044","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:36:44.978Z"}
+{"correlationId":"946c7044","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:36:44.979Z"}
+{"correlationId":"946c7044","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:36:44.979Z"}
+{"correlationId":"946c7044","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:36:44.979Z"}
+{"correlationId":"946c7044","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T01:36:44.980Z","version":"1.0.0"}
+{"correlationId":"946c7044","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T01:36:44.981Z"}
+{"correlationId":"946c7044","level":"info","message":"Received SIGINT, shutting down gracefully","service":"crawldock","timestamp":"2025-07-24T01:36:52.478Z"}
+{"correlationId":"7a108171","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T01:43:23.945Z"}
+{"correlationId":"7a108171","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:43:23.948Z"}
+{"correlationId":"7a108171","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T01:43:23.949Z","windowHours":24}
+{"correlationId":"7a108171","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:43:23.950Z"}
+{"correlationId":"7a108171","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:43:23.950Z"}
+{"correlationId":"7a108171","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:43:23.950Z"}
+{"correlationId":"7a108171","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:43:23.950Z"}
+{"correlationId":"7a108171","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T01:43:23.951Z","version":"1.0.0"}
+{"correlationId":"7a108171","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T01:43:23.952Z"}
+{"correlationId":"d8ca015f","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T01:43:32.828Z"}
+{"correlationId":"d8ca015f","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:43:32.831Z"}
+{"correlationId":"d8ca015f","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T01:43:32.832Z","windowHours":24}
+{"correlationId":"d8ca015f","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:43:32.832Z"}
+{"correlationId":"d8ca015f","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:43:32.832Z"}
+{"correlationId":"d8ca015f","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T01:43:32.832Z"}
+{"correlationId":"d8ca015f","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T01:43:32.832Z"}
+{"correlationId":"d8ca015f","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T01:43:32.833Z","version":"1.0.0"}
+{"correlationId":"d8ca015f","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T01:43:32.834Z"}
+{"correlationId":"d5e57dd6","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T04:00:18.301Z"}
+{"correlationId":"d5e57dd6","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T04:00:18.304Z"}
+{"correlationId":"d5e57dd6","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T04:00:18.304Z","windowHours":24}
+{"correlationId":"d5e57dd6","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:00:18.305Z"}
+{"correlationId":"d5e57dd6","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:00:18.305Z"}
+{"correlationId":"d5e57dd6","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:00:18.305Z"}
+{"correlationId":"d5e57dd6","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T04:00:18.305Z"}
+{"correlationId":"d5e57dd6","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T04:00:18.305Z","version":"1.0.0"}
+{"correlationId":"d5e57dd6","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T04:00:18.306Z"}
+{"correlationId":"67888b5b","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T04:12:25.308Z"}
+{"correlationId":"67888b5b","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T04:12:25.311Z"}
+{"correlationId":"67888b5b","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T04:12:25.312Z","windowHours":24}
+{"correlationId":"67888b5b","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:12:25.312Z"}
+{"correlationId":"67888b5b","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:12:25.313Z"}
+{"correlationId":"67888b5b","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:12:25.313Z"}
+{"correlationId":"67888b5b","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T04:12:25.313Z"}
+{"correlationId":"67888b5b","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T04:12:25.314Z","version":"1.0.0"}
+{"correlationId":"67888b5b","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T04:12:25.315Z"}
+{"correlationId":"886c2be5","level":"info","message":"Starting CrawlDock MCP Server","service":"crawldock","timestamp":"2025-07-24T04:12:42.299Z"}
+{"correlationId":"886c2be5","hasGoogleApiKey":true,"hasGoogleSearchEngineId":true,"level":"info","maxResults":10,"message":"Configuration loaded","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T04:12:42.303Z"}
+{"correlationId":"886c2be5","level":"info","maxRequests":500,"message":"CrawlDock Rate Limiter initialized","service":"crawldock","timestamp":"2025-07-24T04:12:42.304Z","windowHours":24}
+{"correlationId":"886c2be5","hasApiKey":true,"hasSearchEngineId":true,"level":"info","message":"CrawlDock Google Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:12:42.304Z"}
+{"correlationId":"886c2be5","level":"info","message":"CrawlDock DuckDuckGo Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:12:42.304Z"}
+{"correlationId":"886c2be5","level":"info","message":"CrawlDock Web Scraper Search Engine initialized","service":"crawldock","timestamp":"2025-07-24T04:12:42.305Z"}
+{"correlationId":"886c2be5","googleConfigured":true,"level":"info","maxResults":10,"message":"CrawlDock Search Manager initialized","service":"crawldock","timeout":10000,"timestamp":"2025-07-24T04:12:42.305Z"}
+{"correlationId":"886c2be5","level":"info","message":"CrawlDock MCP Server initialized","serverName":"web-search","service":"crawldock","timestamp":"2025-07-24T04:12:42.305Z","version":"1.0.0"}
+{"correlationId":"886c2be5","level":"info","message":"CrawlDock MCP Server started and connected via stdio transport","service":"crawldock","timestamp":"2025-07-24T04:12:42.306Z"}
+{"arguments":{"options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner"},"correlationId":"886c2be5","level":"info","message":"Tool called","method":"tools/call","service":"crawldock","timestamp":"2025-07-24T04:12:43.671Z","toolName":"web_search"}
+{"args":{"options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner"},"correlationId":"886c2be5","level":"info","message":"Processing web_search tool call","service":"crawldock","timestamp":"2025-07-24T04:12:43.672Z"}
+{"correlationId":"886c2be5","level":"info","message":"LLM Search Request","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","requestType":"llm_search","service":"crawldock","timestamp":"2025-07-24T04:12:43.673Z"}
+{"correlationId":"886c2be5","level":"info","message":"Executing web search","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","service":"crawldock","timestamp":"2025-07-24T04:12:43.673Z"}
+{"availableEngines":["Google","DuckDuckGo","WebScraper"],"correlationId":"886c2be5","level":"info","message":"Starting search with fallback strategy","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","service":"crawldock","timestamp":"2025-07-24T04:12:43.674Z"}
+{"correlationId":"886c2be5","level":"info","message":"Attempting search with Google","query":"Super Bowl 2025 winner","service":"crawldock","timestamp":"2025-07-24T04:12:43.674Z"}
+{"correlationId":"886c2be5","level":"info","message":"Starting Google search (attempt 1/3)","options":{"formatForLLM":true,"maxResults":5},"query":"Super Bowl 2025 winner","service":"crawldock","timestamp":"2025-07-24T04:12:43.674Z"}
+{"attempt":1,"correlationId":"886c2be5","level":"info","message":"Google search completed","processingTime":525,"query":"Super Bowl 2025 winner","resultsCount":5,"service":"crawldock","timestamp":"2025-07-24T04:12:44.199Z","totalResults":"170000000"}
+{"correlationId":"886c2be5","engine":"Google","eventType":"engine_performance","level":"info","message":"Search Engine Performance","processingTime":525,"query":"Super Bowl 2025 winner","service":"crawldock","success":true,"timestamp":"2025-07-24T04:12:44.199Z"}
+{"correlationId":"886c2be5","engine":"Google","level":"info","message":"Search successful with Google","processingTime":525,"query":"Super Bowl 2025 winner","resultsCount":5,"service":"crawldock","timestamp":"2025-07-24T04:12:44.199Z"}
+{"correlationId":"886c2be5","engine":"google","level":"info","message":"LLM Search Response","processingTime":525,"query":"Super Bowl 2025 winner","responseType":"llm_search_result","resultsCount":5,"service":"crawldock","timestamp":"2025-07-24T04:12:44.199Z"}
+{"correlationId":"886c2be5","level":"info","message":"Web search completed successfully","processingTime":525,"query":"Super Bowl 2025 winner","resultsCount":5,"service":"crawldock","timestamp":"2025-07-24T04:12:44.200Z"}

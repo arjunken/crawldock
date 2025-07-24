@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# CrowlDock Setup Script
-echo "🔍 Setting up CrowlDock..."
+# CrawlDock Setup Script
+echo "🔍 Setting up CrawlDock..."
 
 # Check if .env exists
 if [ ! -f .env ]; then
@@ -23,7 +23,7 @@ else
 fi
 
 # Build the project
-echo "🔨 Building CrowlDock..."
+echo "🔨 Building CrawlDock..."
 npm run build
 echo "✅ Build complete!"
 

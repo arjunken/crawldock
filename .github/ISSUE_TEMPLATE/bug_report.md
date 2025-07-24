@@ -1,6 +1,6 @@
 ---
 name: 🐛 Bug Report
-about: Create a report to help us improve CrowlDock
+about: Create a report to help us improve CrawlDock
 title: '[BUG] '
 labels: ['bug', 'needs-triage']
 assignees: ''
@@ -35,7 +35,7 @@ assignees: ''
 - **OS**: [e.g. Windows 11, macOS 14.0, Ubuntu 22.04]
 - **Node.js Version**: [e.g. 18.17.0]
 - **npm Version**: [e.g. 9.6.7]
-- **CrowlDock Version**: [e.g. 1.0.0]
+- **CrawlDock Version**: [e.g. 1.0.0]
 
 ### **MCP Client Information**
 - **Client**: [e.g. LM Studio, Claude Desktop, Ollama]
@@ -72,7 +72,7 @@ Get-Content logs/combined.log -Tail 20
     "web-search": {
       "command": "node",
       "args": ["dist/index.js"],
-      "cwd": "/path/to/crowldock"
+      "cwd": "/path/to/crawldock"
     }
   }
 }

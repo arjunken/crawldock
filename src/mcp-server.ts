@@ -41,7 +41,7 @@ export class MCPServer {
     this.searchManager = new SearchManager(config);
     this.setupHandlers();
 
-    logger.info('CrowlDock MCP Server initialized', {
+    logger.info('CrawlDock MCP Server initialized', {
       serverName: 'web-search',
       version: '1.0.0'
     });
@@ -396,6 +396,6 @@ export class MCPServer {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
     
-    logger.info('CrowlDock MCP Server started and connected via stdio transport');
+    logger.info('CrawlDock MCP Server started and connected via stdio transport');
   }
 }

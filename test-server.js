@@ -3,7 +3,7 @@
 // Simple test to verify the server is working
 import { spawn } from 'child_process';
 
-console.log('Testing CrowlDock server...');
+console.log('Testing CrawlDock server...');
 
 const server = spawn('node', ['dist/index.js'], {
   stdio: ['pipe', 'pipe', 'pipe']

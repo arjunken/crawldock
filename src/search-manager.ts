@@ -20,7 +20,7 @@ export class SearchManager {
     this.duckduckgoEngine = new DuckDuckGoSearchEngine(config);
     this.webScraperEngine = new WebScraperSearchEngine(config);
 
-    logger.info('CrowlDock Search Manager initialized', {
+    logger.info('CrawlDock Search Manager initialized', {
       googleConfigured: this.googleEngine.isConfigured(),
       maxResults: config.maxResults,
       timeout: config.timeout
@@ -175,7 +175,7 @@ export class SearchManager {
     this.duckduckgoEngine = new DuckDuckGoSearchEngine(this.config);
     this.webScraperEngine = new WebScraperSearchEngine(this.config);
 
-    logger.info('CrowlDock search configuration updated', {
+    logger.info('CrawlDock search configuration updated', {
       googleConfigured: this.googleEngine.isConfigured(),
       maxResults: this.config.maxResults
     });

@@ -12,7 +12,7 @@ const baseLogger = winston.createLogger({
     winston.format.json()
   ),
   defaultMeta: { 
-    service: 'crowldock',
+    service: 'crawldock',
     correlationId: createCorrelationId()
   },
   transports: [
