@@ -10,7 +10,7 @@
     "dev": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["mcp", "search", "web-search", "llm", "crawldock", "model-context-protocol"],
+  "keywords": ["mcp", "search", "web-search", "llm", "crawldock", "model-context-protocol", "cursor-ai", "lm-studio", "claude-desktop", "ollama"],
   "author": "CrawlDock",
   "license": "MIT",
   "dependencies": {

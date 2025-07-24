@@ -1,6 +1,6 @@
 # CrawlDock - Web Search MCP Server
 
-A comprehensive Model Context Protocol (MCP) server that provides web search capabilities for any MCP-compliant applications. Features Google Custom Search API integration with DuckDuckGo and web scraping fallbacks, optimized for LLM consumption.
+A comprehensive Model Context Protocol (MCP) server that provides web search capabilities for any MCP-compliant applications including LM Studio, Claude Desktop, Ollama, Cursor.ai, and more. Features Google Custom Search API integration with DuckDuckGo and web scraping fallbacks, optimized for LLM consumption.
 
 ## Features
 
@@ -180,6 +180,37 @@ Configure in your Ollama MCP plugin settings:
 1. Restart Ollama
 2. Start a new conversation
 3. Try: "Search for the latest AI developments"
+
+### Cursor.ai Configuration
+
+**Step 1: Build CrawlDock**
+```bash
+npm install
+npm run build
+```
+
+**Step 2: Configure Cursor.ai**
+1. Open Cursor.ai
+2. Go to Settings (⚙️) → Extensions → MCP
+3. Add a new MCP server configuration:
+
+```json
+{
+  "name": "web-search",
+  "command": "node",
+  "args": ["dist/index.js"],
+  "cwd": "/path/to/crawldock",
+  "transport": "stdio"
+}
+```
+
+**Important**: The `cwd` (current working directory) field is **essential** for loading the `.env` file with your Google API keys.
+
+**Step 3: Restart and Test**
+1. Restart Cursor.ai
+2. Open a new chat or conversation
+3. Try: "Search for the latest AI developments"
+4. You can also use web search in code comments: `// TODO: Search for React best practices 2024`
 
 ### Custom MCP Client
 
