@@ -51,7 +51,7 @@ npm start
 ### **Environment Setup**
 ```bash
 # Copy example configuration
-cp config.example.json config.json
+cp .env.example .env
 
 # Create .env file (optional, for Google API testing)
 cp .env.example .env

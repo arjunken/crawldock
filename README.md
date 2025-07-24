@@ -39,8 +39,8 @@ npm run build
 
 3. **Configure environment (optional):**
 ```bash
-cp config.example.json config.json
-# Edit config.json with your Google API credentials (optional)
+cp .env.example .env
+# Edit .env with your Google API credentials (optional)
 ```
 
 4. **Test the server:**
