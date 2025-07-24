@@ -56,9 +56,12 @@ export class SearchManager {
       availableEngines: searchEngines.filter(e => e.enabled).map(e => e.name)
     });
 
+    const engineResults: Array<{name: string, success: boolean, error?: string, resultsCount?: number}> = [];
+
     for (const { name, engine, enabled } of searchEngines) {
       if (!enabled) {
         logger.debug(`Skipping ${name} - not configured`);
+        engineResults.push({ name, success: false, error: 'Not configured' });
         continue;
       }
 
@@ -91,18 +94,22 @@ export class SearchManager {
           this.updatePerformanceStats(name, false, engineProcessingTime);
           logger.enginePerformance(name, query, engineProcessingTime, false);
           logger.warn(`No results from ${name}`, { query });
+          engineResults.push({ name, success: false, error: 'No results returned', resultsCount: 0 });
         }
       } catch (error) {
         const engineProcessingTime = Date.now() - engineStartTime;
         this.updatePerformanceStats(name, false, engineProcessingTime);
         logger.enginePerformance(name, query, engineProcessingTime, false);
         
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
         logger.error(`Search failed with ${name}`, {
           query,
           engine: name,
-          error: error instanceof Error ? error.message : 'Unknown error',
+          error: errorMessage,
           processingTime: engineProcessingTime
         });
+        
+        engineResults.push({ name, success: false, error: errorMessage });
         
         // Continue to next engine
         continue;
@@ -114,9 +121,10 @@ export class SearchManager {
     logger.error('All search engines failed', { 
       query, 
       totalProcessingTime,
-      performanceStats: this.getPerformanceStats()
+      performanceStats: this.getPerformanceStats(),
+      engineResults
     });
-    throw new Error('All search engines failed to return results');
+    throw new Error(`All search engines failed to return results. Engine results: ${JSON.stringify(engineResults)}`);
   }
 
   private updatePerformanceStats(engineName: string, success: boolean, processingTime: number): void {

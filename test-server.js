@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+// Simple test to verify the server is working
+import { spawn } from 'child_process';
+
+console.log('Testing CrowlDock server...');
+
+const server = spawn('node', ['dist/index.js'], {
+  stdio: ['pipe', 'pipe', 'pipe']
+});
+
+// Send a test request
+const testRequest = {
+  jsonrpc: "2.0",
+  id: 1,
+  method: "tools/list",
+  params: {}
+};
+
+server.stdin.write(JSON.stringify(testRequest) + '\n');
+
+let output = '';
+server.stdout.on('data', (data) => {
+  output += data.toString();
+  console.log('Server response:', data.toString());
+});
+
+server.stderr.on('data', (data) => {
+  console.log('Server error:', data.toString());
+});
+
+server.on('close', (code) => {
+  console.log('Server closed with code:', code);
+  console.log('Full output:', output);
+});
+
+// Kill after 5 seconds
+setTimeout(() => {
+  server.kill();
+}, 5000); 

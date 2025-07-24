@@ -4,7 +4,7 @@ export class DuckDuckGoSearchEngine {
     config;
     constructor(config) {
         this.config = config;
-        logger.info('DuckDuckGo Search Engine initialized');
+        logger.info('CrowlDock DuckDuckGo Search Engine initialized');
     }
     async search(query, options = {}) {
         const startTime = Date.now();
@@ -19,12 +19,19 @@ export class DuckDuckGoSearchEngine {
                 no_redirect: '1',
                 safe_search: options.safeSearch ? 'strict' : 'moderate'
             };
+            logger.debug('DuckDuckGo API request params', { params });
             const response = await axios.get('https://api.duckduckgo.com/', {
                 params,
                 timeout: this.config.timeout,
                 headers: {
                     'User-Agent': this.config.userAgent
                 }
+            });
+            logger.debug('DuckDuckGo API response received', {
+                status: response.status,
+                dataKeys: Object.keys(response.data || {}),
+                hasAbstract: !!response.data?.Abstract,
+                hasRelatedTopics: !!response.data?.RelatedTopics
             });
             const results = [];
             const data = response.data;
@@ -58,6 +65,11 @@ export class DuckDuckGoSearchEngine {
                     }
                 }
             }
+            logger.debug('DuckDuckGo results before HTML fallback', {
+                resultsCount: results.length,
+                hasAbstract: !!data.Abstract,
+                relatedTopicsCount: data.RelatedTopics?.length || 0
+            });
             // If no results from instant answers, try the HTML search
             if (results.length === 0) {
                 logger.info('No instant answers found, trying HTML search');
@@ -82,7 +94,8 @@ export class DuckDuckGoSearchEngine {
             logger.error('DuckDuckGo search failed', {
                 query,
                 error: error instanceof Error ? error.message : 'Unknown error',
-                processingTime
+                processingTime,
+                stack: error instanceof Error ? error.stack : undefined
             });
             throw error;
         }

@@ -92,52 +92,94 @@ RATE_LIMIT_WINDOW_HOURS=24
 
 ### LM Studio Configuration
 
-Add this to your LM Studio MCP configuration:
+**Step 1: Build CrowlDock**
+```bash
+npm install
+npm run build
+```
+
+**Step 2: Configure LM Studio**
+Add this to your LM Studio MCP configuration (`%APPDATA%\LM Studio\mcp.json`):
 
 ```json
 {
   "mcpServers": {
-    "crowldock": {
+    "web-search": {
       "command": "node",
-      "args": ["/path/to/crowldock/dist/index.js"],
-      "env": {
-        "GOOGLE_API_KEY": "your_key_here",
-        "GOOGLE_SEARCH_ENGINE_ID": "your_engine_id_here"
-      }
+      "args": ["dist/index.js"],
+      "cwd": "C:\\path\\to\\crowldock"
     }
   }
 }
 ```
 
+**Important**: The `cwd` (current working directory) field is **essential** for loading the `.env` file with your Google API keys. Without this, the server will start without API keys and all search engines will fail.
+
+**Step 3: Restart and Test**
+1. Restart LM Studio
+2. Start a new conversation
+3. You should see a "web-search" toggle
+4. Try: "Search for the latest AI developments"
+
 ### Claude Desktop Configuration
 
+**Step 1: Build CrowlDock**
+```bash
+npm install
+npm run build
+```
+
+**Step 2: Configure Claude Desktop**
 Add to your Claude Desktop MCP configuration:
 
 ```json
 {
   "mcpServers": {
-    "crowldock": {
+    "web-search": {
       "command": "node",
-      "args": ["/path/to/crowldock/dist/index.js"]
+      "args": ["dist/index.js"],
+      "cwd": "/path/to/crowldock"
     }
   }
 }
 ```
 
+**Important**: The `cwd` (current working directory) field is **essential** for loading the `.env` file with your Google API keys.
+
+**Step 3: Restart and Test**
+1. Restart Claude Desktop
+2. Start a new conversation
+3. Try: "Search for the latest AI developments"
+
 ### Ollama Configuration
 
+**Step 1: Build CrowlDock**
+```bash
+npm install
+npm run build
+```
+
+**Step 2: Configure Ollama**
 Configure in your Ollama MCP plugin settings:
 
 ```json
 {
   "servers": {
-    "crowldock": {
+    "web-search": {
       "command": "node",
-      "args": ["/path/to/crowldock/dist/index.js"]
+      "args": ["dist/index.js"],
+      "cwd": "/path/to/crowldock"
     }
   }
 }
 ```
+
+**Important**: The `cwd` (current working directory) field is **essential** for loading the `.env` file with your Google API keys.
+
+**Step 3: Restart and Test**
+1. Restart Ollama
+2. Start a new conversation
+3. Try: "Search for the latest AI developments"
 
 ### Custom MCP Client
 
@@ -145,14 +187,39 @@ For any MCP-compliant client, use the stdio transport:
 
 ```json
 {
-  "name": "crowldock",
+  "name": "web-search",
   "command": "node",
-  "args": ["/path/to/crowldock/dist/index.js"],
+  "args": ["dist/index.js"],
+  "cwd": "/path/to/crowldock",
   "transport": "stdio"
 }
 ```
 
+**Important**: The `cwd` (current working directory) field is **essential** for loading the `.env` file with your Google API keys.
+
 ## Usage
+
+### How to Use in Conversations
+
+Once configured, you can use CrowlDock in your conversations:
+
+#### **Basic Web Search**
+```
+User: "Search for the latest AI developments"
+Assistant: [Uses web-search tool to find current information]
+```
+
+#### **Specific Queries**
+```
+User: "Search for Python tutorials for beginners"
+Assistant: [Uses web-search tool with specific parameters]
+```
+
+#### **Recent Information**
+```
+User: "What are the latest news about OpenAI?"
+Assistant: [Uses web-search tool with time filtering]
+```
 
 ### Available Tools
 
@@ -351,11 +418,70 @@ src/
 
 ### Common Issues
 
-1. **No search results**: Check if any search engines are working with `get_performance_info`
-2. **Rate limit exceeded**: Wait for reset or check limit with rate limit tool
-3. **Google API errors**: Verify API key and search engine ID
-4. **Connection timeouts**: Increase `SEARCH_TIMEOUT` environment variable
-5. **Performance issues**: Use `get_performance_info` to identify slow engines
+#### **1. "All search engines failed to return results"**
+
+**Symptoms:**
+- Google: "Not configured"
+- DuckDuckGo: "No results returned"
+- WebScraper: "No results returned"
+
+**Root Cause:** LM Studio not loading `.env` file due to missing `cwd` in MCP configuration.
+
+**Solution:**
+1. Update your `mcp.json` to include the `cwd` field:
+   ```json
+   {
+     "mcpServers": {
+       "web-search": {
+         "command": "node",
+         "args": ["dist/index.js"],
+         "cwd": "C:\\path\\to\\crowldock"
+       }
+     }
+   }
+   ```
+2. Restart LM Studio completely
+3. Start a new conversation
+
+#### **2. Server Not Starting**
+
+**Symptoms:**
+- `TypeError: logger.error is not a function`
+- Build errors
+- Missing dependencies
+
+**Solution:**
+1. Rebuild the project: `npm run build`
+2. Check all dependencies: `npm install`
+3. Verify TypeScript compilation
+
+#### **3. Multiple Server Instances**
+
+**Symptoms:**
+- Multiple Node.js processes running
+- Conflicting server instances
+- Old cached connections
+
+**Solution:**
+1. Kill all Node.js processes: `taskkill /F /IM node.exe`
+2. Restart LM Studio completely
+3. Clear any MCP cache
+
+#### **4. Incorrect Search Results**
+
+**Symptoms:**
+- Getting 2024 results instead of 2025
+- Outdated information
+- Wrong search context
+
+**Solution:**
+1. Use specific search queries (e.g., "Super Bowl 2025 winner")
+2. Check search engine configuration
+3. Verify API key permissions
+
+#### **5. Rate limit exceeded**: Wait for reset or check limit with rate limit tool
+#### **6. Connection timeouts**: Increase `SEARCH_TIMEOUT` environment variable
+#### **7. Performance issues**: Use `get_performance_info` to identify slow engines
 
 ### Debug Logging
 
@@ -370,6 +496,54 @@ Test the server manually:
 ```bash
 echo '{"jsonrpc":"2.0","id":1,"method":"tools/list","params":{}}' | node dist/index.js
 ```
+
+### Check Server Status
+
+**1. Verify Environment Variables:**
+```bash
+node test-env.js
+```
+
+**2. Check Running Processes:**
+```bash
+# Windows
+tasklist | findstr node
+
+# Linux/Mac
+ps aux | grep node
+```
+
+**3. View Server Logs:**
+```bash
+# View recent logs
+Get-Content logs/combined.log -Tail 20
+
+# Monitor logs in real-time
+Get-Content logs/combined.log -Wait
+```
+
+**4. Test Search Functionality:**
+```bash
+node test-search.js
+```
+
+### Success Indicators
+
+**Working Server Logs:**
+```json
+{
+  "hasGoogleApiKey": true,
+  "hasGoogleSearchEngineId": true,
+  "googleConfigured": true,
+  "serverName": "web-search"
+}
+```
+
+**Working LM Studio Integration:**
+- `[MCP Server] Tools requested by LM Studio`
+- `[MCP Server] Tool called: web_search`
+- Search results appear in conversation
+- No "Tool call failed" errors
 
 ### Performance Analysis
 

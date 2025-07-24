@@ -19,6 +19,22 @@ export interface SearchResponse {
     timestamp: string;
     processingTime: number;
 }
+export interface LLMOptimizedResult {
+    title: string;
+    url: string;
+    summary: string;
+    relevance: number;
+    source: string;
+    domain: string;
+}
+export interface LLMOptimizedResponse {
+    query: string;
+    results: LLMOptimizedResult[];
+    summary: string;
+    searchEngine: string;
+    processingTime: number;
+    confidence: number;
+}
 export interface SearchConfig {
     googleApiKey?: string;
     googleSearchEngineId?: string;
@@ -37,5 +53,8 @@ export interface SearchOptions {
     region?: string;
     safeSearch?: boolean;
     timeRange?: 'day' | 'week' | 'month' | 'year';
+    formatForLLM?: boolean;
+    includeSummary?: boolean;
+    relevanceThreshold?: number;
 }
 //# sourceMappingURL=types.d.ts.map

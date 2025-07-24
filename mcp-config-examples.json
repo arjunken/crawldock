@@ -3,9 +3,9 @@
     "description": "Configuration for LM Studio",
     "config": {
       "mcpServers": {
-        "crowldock": {
+        "web-search": {
           "command": "node",
-          "args": ["/path/to/crowldock/dist/index.js"],
+          "args": ["C:\\path\\to\\crowldock\\dist\\index.js"],
           "env": {
             "GOOGLE_API_KEY": "your_key_here",
             "GOOGLE_SEARCH_ENGINE_ID": "your_engine_id_here"
@@ -18,7 +18,7 @@
     "description": "Configuration for Claude Desktop",
     "config": {
       "mcpServers": {
-        "crowldock": {
+        "web-search": {
           "command": "node",
           "args": ["/path/to/crowldock/dist/index.js"]
         }
@@ -29,7 +29,7 @@
     "description": "Configuration for Ollama with MCP plugin",
     "config": {
       "servers": {
-        "crowldock": {
+        "web-search": {
           "command": "node",
           "args": ["/path/to/crowldock/dist/index.js"]
         }
@@ -39,7 +39,7 @@
   "generic-mcp": {
     "description": "Generic configuration for any MCP-compliant client",
     "config": {
-      "name": "crowldock",
+      "name": "web-search",
       "command": "node",
       "args": ["/path/to/crowldock/dist/index.js"],
       "transport": "stdio"

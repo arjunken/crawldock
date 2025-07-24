@@ -9,19 +9,21 @@ export class SearchManager {
     duckduckgoEngine;
     webScraperEngine;
     config;
+    performanceStats = new Map();
     constructor(config) {
         this.config = config;
         this.rateLimiter = new RateLimiter();
         this.googleEngine = new GoogleSearchEngine(config);
         this.duckduckgoEngine = new DuckDuckGoSearchEngine(config);
         this.webScraperEngine = new WebScraperSearchEngine(config);
-        logger.info('Search Manager initialized', {
+        logger.info('CrowlDock Search Manager initialized', {
             googleConfigured: this.googleEngine.isConfigured(),
             maxResults: config.maxResults,
             timeout: config.timeout
         });
     }
     async search(query, options = {}) {
+        const startTime = Date.now();
         // Check rate limit
         if (!this.rateLimiter.canMakeRequest()) {
             const rateLimitInfo = this.rateLimiter.getRateLimitInfo();
@@ -44,42 +46,99 @@ export class SearchManager {
             options,
             availableEngines: searchEngines.filter(e => e.enabled).map(e => e.name)
         });
+        const engineResults = [];
         for (const { name, engine, enabled } of searchEngines) {
             if (!enabled) {
                 logger.debug(`Skipping ${name} - not configured`);
+                engineResults.push({ name, success: false, error: 'Not configured' });
                 continue;
             }
+            const engineStartTime = Date.now();
             try {
                 logger.info(`Attempting search with ${name}`, { query });
                 const result = await engine.search(query, options);
+                const engineProcessingTime = Date.now() - engineStartTime;
                 if (result.results.length > 0) {
+                    // Update performance stats
+                    this.updatePerformanceStats(name, true, engineProcessingTime);
+                    // Log engine performance
+                    logger.enginePerformance(name, query, engineProcessingTime, true);
                     logger.info(`Search successful with ${name}`, {
                         query,
                         resultsCount: result.results.length,
-                        engine: name
+                        engine: name,
+                        processingTime: engineProcessingTime
                     });
+                    // Add total processing time to result
+                    result.processingTime = Date.now() - startTime;
                     return result;
                 }
                 else {
+                    this.updatePerformanceStats(name, false, engineProcessingTime);
+                    logger.enginePerformance(name, query, engineProcessingTime, false);
                     logger.warn(`No results from ${name}`, { query });
+                    engineResults.push({ name, success: false, error: 'No results returned', resultsCount: 0 });
                 }
             }
             catch (error) {
+                const engineProcessingTime = Date.now() - engineStartTime;
+                this.updatePerformanceStats(name, false, engineProcessingTime);
+                logger.enginePerformance(name, query, engineProcessingTime, false);
+                const errorMessage = error instanceof Error ? error.message : 'Unknown error';
                 logger.error(`Search failed with ${name}`, {
                     query,
                     engine: name,
-                    error: error instanceof Error ? error.message : 'Unknown error'
+                    error: errorMessage,
+                    processingTime: engineProcessingTime
                 });
+                engineResults.push({ name, success: false, error: errorMessage });
                 // Continue to next engine
                 continue;
             }
         }
         // If all engines failed
-        logger.error('All search engines failed', { query });
-        throw new Error('All search engines failed to return results');
+        const totalProcessingTime = Date.now() - startTime;
+        logger.error('All search engines failed', {
+            query,
+            totalProcessingTime,
+            performanceStats: this.getPerformanceStats(),
+            engineResults
+        });
+        throw new Error(`All search engines failed to return results. Engine results: ${JSON.stringify(engineResults)}`);
+    }
+    updatePerformanceStats(engineName, success, processingTime) {
+        const stats = this.performanceStats.get(engineName) || { success: 0, failure: 0, avgTime: 0 };
+        if (success) {
+            stats.success++;
+        }
+        else {
+            stats.failure++;
+        }
+        // Update average processing time
+        const totalRequests = stats.success + stats.failure;
+        stats.avgTime = (stats.avgTime * (totalRequests - 1) + processingTime) / totalRequests;
+        this.performanceStats.set(engineName, stats);
+    }
+    getPerformanceStats() {
+        const stats = {};
+        for (const [engine, data] of this.performanceStats.entries()) {
+            stats[engine] = {
+                success: data.success,
+                failure: data.failure,
+                successRate: data.success / (data.success + data.failure),
+                avgProcessingTime: Math.round(data.avgTime)
+            };
+        }
+        return stats;
     }
     getRateLimitInfo() {
         return this.rateLimiter.getRateLimitInfo();
+    }
+    getPerformanceInfo() {
+        return {
+            rateLimit: this.rateLimiter.getRateLimitInfo(),
+            engineStats: this.getPerformanceStats()
+        };
     }
     updateConfig(newConfig) {
         this.config = { ...this.config, ...newConfig };
@@ -87,7 +146,7 @@ export class SearchManager {
         this.googleEngine = new GoogleSearchEngine(this.config);
         this.duckduckgoEngine = new DuckDuckGoSearchEngine(this.config);
         this.webScraperEngine = new WebScraperSearchEngine(this.config);
-        logger.info('Search configuration updated', {
+        logger.info('CrowlDock search configuration updated', {
             googleConfigured: this.googleEngine.isConfigured(),
             maxResults: this.config.maxResults
         });

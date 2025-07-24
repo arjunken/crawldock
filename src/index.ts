@@ -31,14 +31,36 @@ async function main() {
     await server.start();
 
     // Handle graceful shutdown
-    process.on('SIGINT', () => {
-      logger.info('Received SIGINT, shutting down gracefully');
-      process.exit(0);
-    });
+    const gracefulShutdown = (signal: string) => {
+      logger.info(`Received ${signal}, shutting down gracefully`);
+      
+      // Give the server time to finish any ongoing operations
+      setTimeout(() => {
+        logger.info('Server shutdown complete');
+        process.exit(0);
+      }, 1000);
+    };
 
-    process.on('SIGTERM', () => {
-      logger.info('Received SIGTERM, shutting down gracefully');
-      process.exit(0);
+    process.on('SIGINT', () => gracefulShutdown('SIGINT'));
+    process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+    process.on('SIGQUIT', () => gracefulShutdown('SIGQUIT'));
+    
+    // Handle uncaught exceptions
+    process.on('uncaughtException', (error) => {
+      logger.error('Uncaught exception', {
+        error: error.message,
+        stack: error.stack
+      });
+      process.exit(1);
+    });
+    
+    // Handle unhandled promise rejections
+    process.on('unhandledRejection', (reason, promise) => {
+      logger.error('Unhandled promise rejection', {
+        reason: reason instanceof Error ? reason.message : String(reason),
+        promise: promise
+      });
+      process.exit(1);
     });
 
   } catch (error) {

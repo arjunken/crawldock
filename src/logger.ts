@@ -4,7 +4,7 @@ import { randomUUID } from 'crypto';
 // Create a correlation ID for request tracking
 const createCorrelationId = () => randomUUID().slice(0, 8);
 
-const logger = winston.createLogger({
+const baseLogger = winston.createLogger({
   level: process.env.LOG_LEVEL || 'info',
   format: winston.format.combine(
     winston.format.timestamp(),
@@ -45,12 +45,16 @@ try {
 }
 
 // Enhanced logger with LLM-specific methods
-const enhancedLogger = {
-  ...logger,
+const logger = {
+  // Winston logger methods
+  error: baseLogger.error.bind(baseLogger),
+  warn: baseLogger.warn.bind(baseLogger),
+  info: baseLogger.info.bind(baseLogger),
+  debug: baseLogger.debug.bind(baseLogger),
   
   // Log LLM request with structured data
   llmRequest: (query: string, options?: any) => {
-    logger.info('LLM Search Request', {
+    baseLogger.info('LLM Search Request', {
       query,
       options,
       requestType: 'llm_search',
@@ -60,7 +64,7 @@ const enhancedLogger = {
 
   // Log LLM response with result summary
   llmResponse: (query: string, results: any[], processingTime: number, engine: string) => {
-    logger.info('LLM Search Response', {
+    baseLogger.info('LLM Search Response', {
       query,
       resultsCount: results.length,
       processingTime,
@@ -72,7 +76,7 @@ const enhancedLogger = {
 
   // Log rate limit events for LLM context
   llmRateLimit: (remaining: number, resetTime: number) => {
-    logger.warn('LLM Rate Limit Warning', {
+    baseLogger.warn('LLM Rate Limit Warning', {
       remaining,
       resetTime: new Date(resetTime).toISOString(),
       eventType: 'llm_rate_limit'
@@ -81,7 +85,7 @@ const enhancedLogger = {
 
   // Log search engine performance for LLM optimization
   enginePerformance: (engine: string, query: string, processingTime: number, success: boolean) => {
-    logger.info('Search Engine Performance', {
+    baseLogger.info('Search Engine Performance', {
       engine,
       query: query.substring(0, 100), // Truncate for performance logging
       processingTime,
@@ -91,4 +95,4 @@ const enhancedLogger = {
   }
 };
 
-export default enhancedLogger;
+export default logger;

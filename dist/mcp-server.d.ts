@@ -4,6 +4,9 @@ export declare class MCPServer {
     private searchManager;
     constructor(config: SearchConfig);
     private setupHandlers;
+    private formatForLLM;
+    private calculateRelevance;
+    private calculateConfidence;
     start(): Promise<void>;
 }
 //# sourceMappingURL=mcp-server.d.ts.map

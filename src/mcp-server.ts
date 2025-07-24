@@ -28,7 +28,7 @@ export class MCPServer {
   constructor(config: SearchConfig) {
     this.server = new Server(
       {
-        name: 'crowldock',
+        name: 'web-search',
         version: '1.0.0',
       },
       {
@@ -42,7 +42,7 @@ export class MCPServer {
     this.setupHandlers();
 
     logger.info('CrowlDock MCP Server initialized', {
-      serverName: 'crowldock',
+      serverName: 'web-search',
       version: '1.0.0'
     });
   }
@@ -50,6 +50,7 @@ export class MCPServer {
   private setupHandlers() {
     // List available tools
     this.server.setRequestHandler(ListToolsRequestSchema, async () => {
+      console.log('[MCP Server] Tools requested by LM Studio');
       const tools: Tool[] = [
         {
           name: 'web_search',
@@ -159,14 +160,25 @@ export class MCPServer {
     this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const { name, arguments: args } = request.params;
 
-      logger.info('Tool called', { toolName: name, arguments: args });
+      console.log(`[MCP Server] Tool called: ${name}`);
+      console.log(`[MCP Server] Arguments:`, JSON.stringify(args, null, 2));
+      logger.info('Tool called', { 
+        toolName: name,
+        arguments: args,
+        method: request.method
+      });
 
       try {
         switch (name) {
           case 'web_search': {
+            logger.info('Processing web_search tool call', { args });
+            console.log(`[MCP Server] Processing web_search query: "${args?.query}"`);
+            console.log(`[MCP Server] Search options:`, JSON.stringify(args?.options, null, 2));
+            
             const { query, options = {} } = args as { query: string; options?: SearchOptions };
             
             if (!query || typeof query !== 'string') {
+              logger.error('Invalid query parameter', { query, type: typeof query });
               throw new Error('Query parameter is required and must be a string');
             }
 
@@ -192,6 +204,12 @@ export class MCPServer {
               responseContent = JSON.stringify(result, null, 2);
             }
             
+            logger.info('Web search completed successfully', { 
+              query, 
+              resultsCount: result.results.length,
+              processingTime: result.processingTime
+            });
+            
             return {
               content: [
                 {
@@ -203,6 +221,8 @@ export class MCPServer {
           }
 
           case 'get_rate_limit_info': {
+            logger.info('Processing get_rate_limit_info tool call');
+            
             const rateLimitInfo = this.searchManager.getRateLimitInfo();
             
             logger.debug('Rate limit info requested', rateLimitInfo);
@@ -229,6 +249,8 @@ export class MCPServer {
           }
 
           case 'get_performance_info': {
+            logger.info('Processing get_performance_info tool call');
+            
             const performanceInfo = this.searchManager.getPerformanceInfo();
             
             logger.debug('Performance info requested', performanceInfo);
@@ -253,6 +275,8 @@ export class MCPServer {
           }
 
           case 'update_search_config': {
+            logger.info('Processing update_search_config tool call', { args });
+            
             const config = args as Partial<SearchConfig>;
             
             logger.info('Updating search configuration', { 
